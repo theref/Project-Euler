@@ -1,9 +1,9 @@
-require_relative james_methods
+require_relative "james_methods"
 
 count_prime = 1
 number = 2
 
-while count_prime < 6
+while count_prime < 10001
 	number += 1
 	if Maths_Methods.is_prime?(number)
 		count_prime += 1
