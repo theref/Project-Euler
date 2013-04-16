@@ -8,6 +8,15 @@ module Maths_Methods
 	end
 	return true
 end
+
+def is_palindrome?(n)
+	check = n.to_s
+	if check == check.reverse
+		return true
+	end
+	return false
+end
+
 end
 
 include Maths_Methods
