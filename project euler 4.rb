@@ -14,3 +14,14 @@ end
 
 palindrome_array.sort_by! {|i| -i}
 puts palindrome_array[0]
+
+=begin
+
+#TESTS
+
+def test_is_palindrome()
+	puts Maths_Methods.is_palindrome?(99, 91)
+end
+
+test_is_palindrome
+=end

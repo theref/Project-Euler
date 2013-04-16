@@ -17,6 +17,13 @@ def is_palindrome?(n)
 	return false
 end
 
+def is_multiple_of?(multiple, factor)
+	if multiple % factor == 0
+		return true
+	end
+	return false
+end
+
 end
 
 include Maths_Methods
