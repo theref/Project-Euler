@@ -30,6 +30,23 @@ module Maths_Methods
 		array.each { |a| sum+=a }
 		return sum
 	end
+
+	def generate_fibonacci(upper_limit)
+		fibonacci = []
+		number1 = 1
+		number2 = 2
+		while number1 < upper_limit
+			if number1 < upper_limit
+				fibonacci << number1
+			end
+			if number2 < upper_limit
+				fibonacci << number2
+			end
+			number1 = number1 + number2
+			number2 = number1 + number2
+		end
+		return fibonacci
+	end
 	
 end
 
