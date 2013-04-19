@@ -47,6 +47,16 @@ module Maths_Methods
 		end
 		return fibonacci
 	end
+
+	def generate_primes(upper_limit)
+		primes = [2]
+		for n in 2..upper_limit
+			if Maths_Methods.is_prime?(n)
+				primes << n
+			end
+		end
+		return primes
+	end
 	
 end
 
